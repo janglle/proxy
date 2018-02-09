@@ -19,7 +19,10 @@ public class Demo {
                 return null;
             }
         });
-        proxyInstance.a();
+        System.out.println("打印:方法b被代理了");
         proxyInstance.b();
+        System.out.println();
+        System.out.println("不打印方法b被代理了");
+        proxyInstance.a();
     }
 }
